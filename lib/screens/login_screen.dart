@@ -25,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               //top Image
-              Container(
+              SizedBox(
                 height: 250,
                 width: MediaQuery.of(context).size.width,
                 child: Image.asset("assets/image/topimage.png"),
