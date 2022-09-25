@@ -9,6 +9,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  TextEditingController emailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,6 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
               Container(
                 margin: const EdgeInsets.only(
                   left: 20,
+                  top: 20,
                 ),
                 child: const Text(
                   "Sign in to continue",
@@ -79,6 +81,71 @@ class _LoginScreenState extends State<LoginScreen> {
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(25.0),
                       topRight: Radius.circular(25.0),
+                    ),
+                  ),
+                  child: Container(
+                    margin: const EdgeInsets.only(
+                      left: 25,
+                      right: 25,
+                      top: 35,
+                    ),
+                    child: Column(
+                      children: [
+                        TextField(
+                          controller: emailController,
+                          cursorColor: AppConstent.lightgraycolor,
+                          decoration: const InputDecoration(
+                            labelText: "Mobile Number/Email",
+                            labelStyle: TextStyle(
+                              color: AppConstent.lightgraycolor,
+                            ),
+                            focusColor: AppConstent.lightgraycolor,
+                            fillColor: AppConstent.lightgraycolor,
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: AppConstent.lightgraycolor,
+                              ),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: AppConstent.lightgraycolor,
+                              ),
+                            ),
+                            border: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: AppConstent.lightgraycolor,
+                              ),
+                            ),
+                          ),
+                        ),
+                        TextField(
+                          controller: emailController,
+                          cursorColor: AppConstent.lightgraycolor,
+                          decoration: const InputDecoration(
+                            labelText: "Password",
+                            labelStyle: TextStyle(
+                              color: AppConstent.lightgraycolor,
+                            ),
+                            focusColor: AppConstent.lightgraycolor,
+                            fillColor: AppConstent.lightgraycolor,
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: AppConstent.lightgraycolor,
+                              ),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: AppConstent.lightgraycolor,
+                              ),
+                            ),
+                            border: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: AppConstent.lightgraycolor,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
