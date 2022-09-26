@@ -1,5 +1,11 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:schoolerp/constant.dart';
+import 'package:schoolerp/model/dashboard_menuacction.dart';
+import 'package:schoolerp/screens/dashboard/bodycontent/menu_button.dart';
+import 'package:schoolerp/screens/dashboard/bodycontent/middle_body.dart';
+import 'package:schoolerp/screens/dashboard/bodycontent/top_widget.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);
@@ -13,64 +19,35 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: MediaQuery.of(context).size.height,
         decoration: const BoxDecoration(
           color: AppConstent.primarycolor,
         ),
-
         child: SafeArea(
           child: Stack(
             children: [
+              const TopWidget(),
               Container(
-                padding: const EdgeInsets.all(18.0),
-                child: Row(
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        RichText(
-                          text: const TextSpan(
-                              text: 'Hi ',
-                              style: TextStyle(
-                                fontSize: 25,
-                                color: Colors.white,
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: 'Faysal',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                    fontSize: 25,
-                                  ),
-                                ),
-                              ]),
-                        ),
-                        const SizedBox(
-                          height: 10.0,
-                        ),
-                        const Text("Class XI-B  |  Roll no: 04",style: TextStyle(color: Colors.white60,),),
-                        Container(
-                          padding: const EdgeInsets.all(3.0),
-                          margin: EdgeInsets.only(top: 10.0),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12.0)
-                          ),
-                          child: const Text("2021-2022",style: TextStyle(color: AppConstent.primarycolor),),
-                        ),
-                      ],
-                    ),
-                    Container(
-                      height: 80,
-                      width: 80,
-                      decoration: BoxDecoration(
-                        color: AppConstent.lightgraycolor
-                      ),
-                    ),
-                  ],
+                height: MediaQuery.of(context).size.height,
+                margin: const EdgeInsets.only(top: 200),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(35.0)),
+                child: Container(
+                  margin: const EdgeInsets.only(
+                      left: 10, right: 10, bottom: 10, top: 60),
+                  padding: const EdgeInsets.all(30.0),
+                  child: GridView.extent(
+                    maxCrossAxisExtent: 200,
+                    crossAxisSpacing: 15.0,
+                    mainAxisSpacing: 15.0,
+                    children: actions
+                        .map((action) => ActionButton(action: action))
+                        .toList(),
+                  ),
                 ),
               ),
-                
+              const Middle_body(),
             ],
           ),
         ),
