@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:schoolerp/constant.dart';
+import 'package:schoolerp/screens/profile/bodycontent/top_profile.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -51,13 +52,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
           color: AppConstent.primarycolor,
         ),
         child: Container(
-          decoration: BoxDecoration(
+          margin: const EdgeInsets.only(top: 20.0),
+          decoration: const BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(25),
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(15.0),
+              topRight: Radius.circular(15.0),
+            ),
           ),
           child: Padding(
             padding: const EdgeInsets.all(12.0),
-            child: Container(),
+            child: Column(
+              children: [
+                const TopProfile(),
+              ],
+            ),
           ),
         ),
       ),
