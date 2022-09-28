@@ -62,8 +62,8 @@ class TopWidget extends StatelessWidget {
           ),
           InkWell(
             onTap: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => ProfileScreen()));
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const ProfileScreen()));
             },
             child: Container(
               height: 80,

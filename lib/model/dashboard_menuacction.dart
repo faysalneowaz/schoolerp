@@ -25,9 +25,7 @@ final List<AppAction> actions = [
     label: 'Play Quiz',
     iconData: "assets/icon/ic_quiz.png",
     labelColor: Colors.black,
-    callback: (context) {
-      print("");
-    },
+    callback: (context) {},
   ),
   AppAction(
     color: AppConstent.menubackcolor,
@@ -37,7 +35,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => MailScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -48,7 +45,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => UrgentScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -59,7 +55,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => NewsScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -70,7 +65,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => NewsScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -81,7 +75,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => NewsScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -92,7 +85,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => NewsScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -103,7 +95,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => NewsScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -114,7 +105,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => NewsScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -125,7 +115,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => NewsScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -136,7 +125,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => NewsScreen()));
-      print("");
     },
   ),
   AppAction(
@@ -147,7 +135,6 @@ final List<AppAction> actions = [
     callback: (context) {
       // Navigator.of(context)
       //     .push(MaterialPageRoute(builder: (_) => NewsScreen()));
-      print("");
     },
   ),
 ];

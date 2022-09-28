@@ -19,9 +19,47 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
         backgroundColor: AppConstent.primarycolor,
         elevation: 0.0,
+        actions: [
+          Container(
+            height: 5,
+            width: 80,
+            margin: const EdgeInsets.only(right: 15.0),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(32.0),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Icon(
+                  Icons.check,
+                  color: AppConstent.primarycolor,
+                  size: 16,
+                ),
+                Text(
+                  "Done",
+                  style:
+                      TextStyle(color: AppConstent.primarycolor, fontSize: 10),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
       body: Container(
-        color: AppConstent.primarycolor,
+        decoration: const BoxDecoration(
+          color: AppConstent.primarycolor,
+        ),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(25),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Container(),
+          ),
+        ),
       ),
     );
   }
