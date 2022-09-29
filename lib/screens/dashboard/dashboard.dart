@@ -30,9 +30,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
               Container(
                 height: MediaQuery.of(context).size.height,
                 margin: const EdgeInsets.only(top: 200),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(35.0)),
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(35.0),
+                    topRight: Radius.circular(35.0),
+                  ),
+                ),
                 child: Container(
                   margin: const EdgeInsets.only(
                       left: 10, right: 10, bottom: 10, top: 60),

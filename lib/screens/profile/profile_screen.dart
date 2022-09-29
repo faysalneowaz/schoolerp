@@ -71,7 +71,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.only(right: 5),
+                        margin: const EdgeInsets.only(right: 5),
                         child: TextFieldCustom(
                           labeltext: "Birth Certificate No",
                           hinttext: "1234 4325 4567 1234",
@@ -81,7 +81,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.only(right: 5),
+                        margin: const EdgeInsets.only(right: 5),
                         child: TextFieldCustom(
                           labeltext: "Academic Year",
                           hinttext: "2021-2022",
@@ -98,7 +98,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.only(right: 5),
+                        margin: const EdgeInsets.only(right: 5),
                         child: TextFieldCustom(
                           labeltext: "Admission Class",
                           hinttext: "VI",
@@ -108,7 +108,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.only(right: 5),
+                        margin: const EdgeInsets.only(right: 5),
                         child: TextFieldCustom(
                           labeltext: "Old Admission No",
                           hinttext: "T0022",
@@ -125,7 +125,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.only(right: 5),
+                        margin: const EdgeInsets.only(right: 5),
                         child: TextFieldCustom(
                           labeltext: "Date of Admission",
                           hinttext: "101 Apr 2018",
@@ -135,7 +135,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.only(right: 5),
+                        margin: const EdgeInsets.only(right: 5),
                         child: TextFieldCustom(
                           labeltext: "Date of Birth",
                           hinttext: "22 July 1996",
@@ -152,10 +152,61 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.only(right: 5),
+                        margin: const EdgeInsets.only(right: 5),
                         child: TextFieldCustom(
                           labeltext: "Parent Mail ID",
                           hinttext: "parentboth@gmail.com",
+                          isLocked: true,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    Flexible(
+                      child: Container(
+                        margin: const EdgeInsets.only(right: 5),
+                        child: TextFieldCustom(
+                          labeltext: "Mother Name",
+                          hinttext: "Monica Larson",
+                          isLocked: true,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    Flexible(
+                      child: Container(
+                        margin: const EdgeInsets.only(right: 5),
+                        child: TextFieldCustom(
+                          labeltext: "Father Name",
+                          hinttext: "Bernard Taylor",
+                          isLocked: true,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    Flexible(
+                      child: Container(
+                        margin: const EdgeInsets.only(right: 5),
+                        child: TextFieldCustom(
+                          labeltext: "Parmanent Add.",
+                          hinttext: "Karol Bagh, Delhi",
                           isLocked: true,
                         ),
                       ),
