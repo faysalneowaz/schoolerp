@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:schoolerp/constant.dart';
+import 'package:schoolerp/screens/attendence/stu_attendence.dart';
 import 'package:schoolerp/screens/dashboard/bodycontent/card.dart';
+import 'package:schoolerp/screens/feesdue/feesdue.dart';
 
 class Middle_body extends StatelessWidget {
   const Middle_body({
@@ -15,6 +17,10 @@ class Middle_body extends StatelessWidget {
       child: Row(
         children: [
           Carddasham(
+            onClick: () {
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const StuAttendence()));
+            },
             imgurl: "assets/icon/studentprofile.png",
             color: AppConstent.lightambercolor,
             moneytext: "80.39 %",
@@ -24,6 +30,10 @@ class Middle_body extends StatelessWidget {
             width: 30.0,
           ),
           Carddasham(
+            onClick: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => const FeesDue()));
+            },
             imgurl: "assets/icon/money.png",
             color: AppConstent.lightpurpelcolor,
             moneytext: "₹6400",
